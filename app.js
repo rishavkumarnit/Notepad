@@ -16,6 +16,12 @@ toggleBtn.addEventListener("click", () => {
     autosaveInterval = setInterval(() => {
       localStorage.setItem("autosave-data", textArea.value);
     }, 1000);
+    if (textArea.value.length > 200) {
+      alert("Your note exceeded 200 characters and has been cleared!");
+      textArea.value = "";
+      localStorage.removeItem("autosave-data");
+      return;
+    }
   } else {
     clearInterval(autosaveInterval);
     autosaveInterval = null;
