@@ -18,7 +18,7 @@ It automatically saves your notes locally every second — so you never lose you
 ## 🛠️ Tech Stack
 - **HTML**
 - **Tailwind CSS**
-- **Vanilla JavaScript**
+- **JavaScript**
 
 ---
 
